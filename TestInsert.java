@@ -34,11 +34,11 @@ public class TestInsert {
                         int rs=stmt.executeUpdate(query);
                         System.out.println(rs+" record inserted");
                         System.out.println("Do you want to continue ? if yes then type y else n");
-                        char ch=(char) br.read();
-                        if(ch=='y' || ch=='Y')
-                            continue;
-                        else
-                            f=false; 
+
+
+                        String ch=(br.readLine()).toLowerCase();
+                        if(ch.equals("n"))
+                            System.exit(1);
                     }
             }
         }
