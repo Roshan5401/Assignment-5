@@ -1,0 +1,22 @@
+--first we have to create the sequence of the thing which has to be auto incremented
+CREATE SEQUENCE id
+START WITH 1
+INCREMENT BY 1;
+
+drop SEQUENCE id;
+--student table with auto increment
+create table student(
+id NUMBER DEFAULT id.NEXTVAL primary key,
+name varchar2(50),
+age int,
+address varchar2(200),
+course int
+);
+
+desc student;
+SELECT * FROM student;
+drop table student;
+
+
+
+--these are codes for the sql to create the student which is required in assignment-5
