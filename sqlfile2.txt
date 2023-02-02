@@ -1,0 +1,24 @@
+
+
+
+create table course
+(
+course_id NUMBER primary key,
+course_name varchar2(50)
+);
+
+create table subject(
+sub_id int primary key,
+sub_name varchar2(50),
+course_id int,
+FOREIGN KEY(course_id) references course(course_id)
+);
+
+create table professor
+(
+    prof_if int primary key,
+    prof_name varchar2(100),
+    course_id int,
+    foreign key(course_id) references course(course_id)
+);
+    
