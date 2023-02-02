@@ -16,7 +16,7 @@ FOREIGN KEY(course_id) references course(course_id)
 
 create table professor
 (
-    prof_if int primary key,
+    prof_id int primary key,
     prof_name varchar2(100),
     course_id int,
     foreign key(course_id) references course(course_id)
