@@ -21,4 +21,27 @@ create table professor
     course_id int,
     foreign key(course_id) references course(course_id)
 );
-    
+
+
+
+desc subject;
+desc course;
+desc professor;
+
+insert into course values(1001,'Computer Science');
+insert into course values(1002,'Information Technology');
+insert into course values(1003,'Electrical');
+
+insert into subject values(1,'Maths',1001);
+insert into subject values(2,'Soft Computing',1001);
+insert into subject values(3,'Cloud Computing',1002);
+insert into subject values(4,'Electronics',1003);
+
+insert into professor values(100,'Roshan',1001);
+insert into professor values(101,'Raj',1002);
+insert into professor values(102,'Rajdeep',1003);
+
+
+select * from subject;
+select * from course;
+select * from professor;
