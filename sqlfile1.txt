@@ -1,3 +1,4 @@
+--Solution of the 1st problem
 --first we have to create the sequence of the thing which has to be auto incremented
 CREATE SEQUENCE id
 START WITH 1
